@@ -6,9 +6,9 @@ spring:
     # DATASOURCE
   datasource:
     name: druidDataSource
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=true&characterEncoding=utf-8
+    url: jdbc:mysql://120.77.148.33:4406/test?useUnicode=true&useSSL=true&characterEncoding=utf-8
     username: root
-    password: 134679
+    password: 7224
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     filters: stat
@@ -28,4 +28,4 @@ spring:
 mybatis:
   config-location: classpath:mybatis-config.xml
   type-aliases-package: com.yb.chat.entity
-  mappers-locations: classpath*:mappers/*.xml
+  mapperLocations: classpath*:mappers/*.xml
